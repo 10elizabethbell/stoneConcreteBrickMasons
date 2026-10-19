@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T14:08:50.432778+00:00",
+  "title": "Design System: Stone, Concrete, & Brick Masons LLC",
+  "extensions": {
+    "colorMeta": {
+      "slate-ground": {
+        "role": "neutral",
+        "displayName": "Slate Ground",
+        "canonical": "#23313a",
+        "oklch": "oklch(30.5% 0.025 236.8)",
+        "tonalRamp": [
+          "oklch(15% 0.025 236.8)",
+          "oklch(26% 0.025 236.8)",
+          "oklch(38% 0.025 236.8)",
+          "oklch(50% 0.025 236.8)",
+          "oklch(62% 0.025 236.8)",
+          "oklch(74% 0.025 236.8)",
+          "oklch(85% 0.025 236.8)",
+          "oklch(95% 0.025 236.8)"
+        ]
+      },
+      "slate-ground-raised": {
+        "role": "neutral",
+        "displayName": "Slate Ground Raised",
+        "canonical": "#2c3d47",
+        "oklch": "oklch(35.0% 0.028 234.4)",
+        "tonalRamp": [
+          "oklch(15% 0.028 234.4)",
+          "oklch(26% 0.028 234.4)",
+          "oklch(38% 0.028 234.4)",
+          "oklch(50% 0.028 234.4)",
+          "oklch(62% 0.028 234.4)",
+          "oklch(74% 0.028 234.4)",
+          "oklch(85% 0.028 234.4)",
+          "oklch(95% 0.028 234.4)"
+        ]
+      },
+      "mortar-paper": {
+        "role": "neutral",
+        "displayName": "Mortar Paper",
+        "canonical": "#e4e7e2",
+        "oklch": "oklch(92.4% 0.007 132.4)",
+        "tonalRamp": [
+          "oklch(15% 0.007 132.4)",
+          "oklch(26% 0.007 132.4)",
+          "oklch(38% 0.007 132.4)",
+          "oklch(50% 0.007 132.4)",
+          "oklch(62% 0.007 132.4)",
+          "oklch(74% 0.007 132.4)",
+          "oklch(85% 0.007 132.4)",
+          "oklch(95% 0.007 132.4)"
+        ]
+      },
+      "mortar-paper-shade": {
+        "role": "neutral",
+        "displayName": "Mortar Paper Shade",
+        "canonical": "#d9ddd7",
+        "oklch": "oklch(89.3% 0.009 134.9)",
+        "tonalRamp": [
+          "oklch(15% 0.009 134.9)",
+          "oklch(26% 0.009 134.9)",
+          "oklch(38% 0.009 134.9)",
+          "oklch(50% 0.009 134.9)",
+          "oklch(62% 0.009 134.9)",
+          "oklch(74% 0.009 134.9)",
+          "oklch(85% 0.009 134.9)",
+          "oklch(95% 0.009 134.9)"
+        ]
+      },
+      "field-fill": {
+        "role": "neutral",
+        "displayName": "Field Fill",
+        "canonical": "#f3f5f1",
+        "oklch": "oklch(96.8% 0.006 128.5)",
+        "tonalRamp": [
+          "oklch(15% 0.006 128.5)",
+          "oklch(26% 0.006 128.5)",
+          "oklch(38% 0.006 128.5)",
+          "oklch(50% 0.006 128.5)",
+          "oklch(62% 0.006 128.5)",
+          "oklch(74% 0.006 128.5)",
+          "oklch(85% 0.006 128.5)",
+          "oklch(95% 0.006 128.5)"
+        ]
+      },
+      "joint-rule": {
+        "role": "neutral",
+        "displayName": "Joint Rule",
+        "canonical": "#c6cbc4",
+        "oklch": "oklch(83.6% 0.011 136.6)",
+        "tonalRamp": [
+          "oklch(15% 0.011 136.6)",
+          "oklch(26% 0.011 136.6)",
+          "oklch(38% 0.011 136.6)",
+          "oklch(50% 0.011 136.6)",
+          "oklch(62% 0.011 136.6)",
+          "oklch(74% 0.011 136.6)",
+          "oklch(85% 0.011 136.6)",
+          "oklch(95% 0.011 136.6)"
+        ]
+      },
+      "mortar-joint": {
+        "role": "neutral",
+        "displayName": "Mortar Joint",
+        "canonical": "#9ea49d",
+        "oklch": "oklch(71.2% 0.012 141.3)",
+        "tonalRamp": [
+          "oklch(15% 0.012 141.3)",
+          "oklch(26% 0.012 141.3)",
+          "oklch(38% 0.012 141.3)",
+          "oklch(50% 0.012 141.3)",
+          "oklch(62% 0.012 141.3)",
+          "oklch(74% 0.012 141.3)",
+          "oklch(85% 0.012 141.3)",
+          "oklch(95% 0.012 141.3)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1d2830",
+        "oklch": "oklch(27.0% 0.021 240.1)",
+        "tonalRamp": [
+          "oklch(15% 0.021 240.1)",
+          "oklch(26% 0.021 240.1)",
+          "oklch(38% 0.021 240.1)",
+          "oklch(50% 0.021 240.1)",
+          "oklch(62% 0.021 240.1)",
+          "oklch(74% 0.021 240.1)",
+          "oklch(85% 0.021 240.1)",
+          "oklch(95% 0.021 240.1)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#46555c",
+        "oklch": "oklch(43.9% 0.022 227.8)",
+        "tonalRamp": [
+          "oklch(15% 0.022 227.8)",
+          "oklch(26% 0.022 227.8)",
+          "oklch(38% 0.022 227.8)",
+          "oklch(50% 0.022 227.8)",
+          "oklch(62% 0.022 227.8)",
+          "oklch(74% 0.022 227.8)",
+          "oklch(85% 0.022 227.8)",
+          "oklch(95% 0.022 227.8)"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On Dark",
+        "canonical": "#f1efe9",
+        "oklch": "oklch(95.2% 0.008 91.5)",
+        "tonalRamp": [
+          "oklch(15% 0.008 91.5)",
+          "oklch(26% 0.008 91.5)",
+          "oklch(38% 0.008 91.5)",
+          "oklch(50% 0.008 91.5)",
+          "oklch(62% 0.008 91.5)",
+          "oklch(74% 0.008 91.5)",
+          "oklch(85% 0.008 91.5)",
+          "oklch(95% 0.008 91.5)"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On Dark Soft",
+        "canonical": "#c4ccce",
+        "oklch": "oklch(84.0% 0.009 214.3)",
+        "tonalRamp": [
+          "oklch(15% 0.009 214.3)",
+          "oklch(26% 0.009 214.3)",
+          "oklch(38% 0.009 214.3)",
+          "oklch(50% 0.009 214.3)",
+          "oklch(62% 0.009 214.3)",
+          "oklch(74% 0.009 214.3)",
+          "oklch(85% 0.009 214.3)",
+          "oklch(95% 0.009 214.3)"
+        ]
+      },
+      "rose-granite": {
+        "role": "tertiary",
+        "displayName": "Rose Granite",
+        "canonical": "#8a6b6a",
+        "oklch": "oklch(55.8% 0.040 20.6)",
+        "tonalRamp": [
+          "oklch(15% 0.040 20.6)",
+          "oklch(26% 0.040 20.6)",
+          "oklch(38% 0.040 20.6)",
+          "oklch(50% 0.040 20.6)",
+          "oklch(62% 0.040 20.6)",
+          "oklch(74% 0.040 20.6)",
+          "oklch(85% 0.040 20.6)",
+          "oklch(95% 0.040 20.6)"
+        ]
+      },
+      "rose-granite-light": {
+        "role": "tertiary",
+        "displayName": "Rose Granite Light",
+        "canonical": "#b39089",
+        "oklch": "oklch(68.4% 0.044 31.3)",
+        "tonalRamp": [
+          "oklch(15% 0.044 31.3)",
+          "oklch(26% 0.044 31.3)",
+          "oklch(38% 0.044 31.3)",
+          "oklch(50% 0.044 31.3)",
+          "oklch(62% 0.044 31.3)",
+          "oklch(74% 0.044 31.3)",
+          "oklch(85% 0.044 31.3)",
+          "oklch(95% 0.044 31.3)"
+        ]
+      },
+      "safety-yellow": {
+        "role": "primary",
+        "displayName": "Safety Yellow",
+        "canonical": "#f2c230",
+        "oklch": "oklch(83.4% 0.158 89.0)",
+        "tonalRamp": [
+          "oklch(15% 0.158 89.0)",
+          "oklch(26% 0.158 89.0)",
+          "oklch(38% 0.158 89.0)",
+          "oklch(50% 0.158 89.0)",
+          "oklch(62% 0.158 89.0)",
+          "oklch(74% 0.158 89.0)",
+          "oklch(85% 0.158 89.0)",
+          "oklch(95% 0.158 89.0)"
+        ]
+      },
+      "safety-yellow-deep": {
+        "role": "primary",
+        "displayName": "Safety Yellow Deep",
+        "canonical": "#d9a812",
+        "oklch": "oklch(75.6% 0.152 87.0)",
+        "tonalRamp": [
+          "oklch(15% 0.152 87.0)",
+          "oklch(26% 0.152 87.0)",
+          "oklch(38% 0.152 87.0)",
+          "oklch(50% 0.152 87.0)",
+          "oklch(62% 0.152 87.0)",
+          "oklch(74% 0.152 87.0)",
+          "oklch(85% 0.152 87.0)",
+          "oklch(95% 0.152 87.0)"
+        ]
+      },
+      "chalk-line": {
+        "role": "secondary",
+        "displayName": "Chalk Line Blue",
+        "canonical": "#2a78c2",
+        "oklch": "oklch(56.3% 0.137 250.8)",
+        "tonalRamp": [
+          "oklch(15% 0.137 250.8)",
+          "oklch(26% 0.137 250.8)",
+          "oklch(38% 0.137 250.8)",
+          "oklch(50% 0.137 250.8)",
+          "oklch(62% 0.137 250.8)",
+          "oklch(74% 0.137 250.8)",
+          "oklch(85% 0.137 250.8)",
+          "oklch(95% 0.137 250.8)"
+        ]
+      },
+      "error-brick": {
+        "role": "error",
+        "displayName": "Error Brick",
+        "canonical": "#a3261b",
+        "oklch": "oklch(47.2% 0.163 29.6)",
+        "tonalRamp": [
+          "oklch(15% 0.163 29.6)",
+          "oklch(26% 0.163 29.6)",
+          "oklch(38% 0.163 29.6)",
+          "oklch(50% 0.163 29.6)",
+          "oklch(62% 0.163 29.6)",
+          "oklch(74% 0.163 29.6)",
+          "oklch(85% 0.163 29.6)",
+          "oklch(95% 0.163 29.6)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, uppercase, balanced."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, Facebook card label, step headings."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero promise line; story paragraphs at clamp(18px,4.8vw,21px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons and form labels."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Notes, errors, status, footer."
+      },
+      "phone-number": {
+        "displayName": "Phone Number",
+        "purpose": "Big closing phone number, tabular numerals."
+      }
+    },
+    "shadows": [
+      {
+        "name": "photo-lift",
+        "value": "0 12px 26px -14px rgba(35,49,58,.55)",
+        "purpose": "Under the framed work photo only."
+      },
+      {
+        "name": "chalk-focus-ring",
+        "value": "0 0 0 3px rgba(42,120,194,.25)",
+        "purpose": "Form fields and chips on focus, with a chalk-blue border."
+      },
+      {
+        "name": "keyboard-focus",
+        "value": "outline: 3px solid #f2c230; outline-offset: 3px",
+        "purpose": "Default focus for everything outside the form controls."
+      },
+      {
+        "name": "trowel-shadow (canvas)",
+        "value": "rgba(20,26,26,.32) blur 8px offset 3px 5px",
+        "purpose": "Steel trowel resting on the slab."
+      },
+      {
+        "name": "block-bed (canvas)",
+        "value": "rgba(40,46,44,.35) offset 1px 3px",
+        "purpose": "Coping block sitting on its mortar bed; canvas material only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "color-transition",
+        "value": "background-color .2s, color .2s, border-color .2s",
+        "purpose": "Buttons, arrow cues, Facebook go-circle."
+      },
+      {
+        "name": "form-transition",
+        "value": "border-color .15s, box-shadow .15s",
+        "purpose": "Fields and chips."
+      },
+      {
+        "name": "press",
+        "value": "transform: translateY(1px), .15s",
+        "purpose": "Button active state."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Transitions off; slab freezes to one finished arc; coping never pushed."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone",
+        "value": "max-width 379px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "livingElements": {
+      "wetConcreteSlab": {
+        "where": "Hero, below the copy",
+        "constants": {
+          "CELL_PHONE": 4,
+          "CELL_DESK": 5,
+          "TROWEL_LEN": 112,
+          "TROWEL_W": 38,
+          "phoneTrowelScale": 0.86,
+          "TALUS": 0.05,
+          "SLUMP": 0.22,
+          "slumpPassesPerFrame": 2,
+          "FLATTEN": 0.5,
+          "PLOW": 0.015,
+          "SMOOTH_RATE": 0.3,
+          "REGROW": 0.0028,
+          "AUTO_IDLE_ms": 3500,
+          "AUTO_SPEED": 0.55,
+          "LIGHT": [
+            -0.45,
+            -0.65,
+            0.62
+          ],
+          "ROUGH_rgb": [
+            132,
+            137,
+            132
+          ],
+          "SMOOTH_rgb": [
+            104,
+            112,
+            112
+          ],
+          "bladeLeadAngle": "PI/2 - 0.45",
+          "turnRate": 0.12,
+          "maxDPR": 1.5,
+          "formBoardHeight_px": 16
+        },
+        "input": "Mouse hover or finger drag in any direction; cursor hidden; touch-action none; autopilot when idle.",
+        "reducedMotion": "Still frame with one finished arc."
+      },
+      "graniteCoping": {
+        "where": "Dividers after hero and story (58px, two courses); single-course cap over the work photo (30px, overhang 8px sides, 18px up)",
+        "constants": {
+          "ROW_H": 24,
+          "JOINT": 4,
+          "MIN_W": 44,
+          "MAX_W": 96,
+          "PUSH_R": 80,
+          "PUSH": 0.9,
+          "MAX_OFF": 9,
+          "MAX_OFF_Y": 4.5,
+          "maxRotation_rad": 0.08,
+          "K": 38,
+          "DAMP": 6.5,
+          "pointerVelocityDecay": 0.85,
+          "maxDPR": 2,
+          "bedColor": "#9ea49d"
+        },
+        "input": "Window-wide pointer and touch moves shove nearby blocks; they spring back.",
+        "reducedMotion": "Drawn, never pushed."
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Safety-yellow pill for the main action (free estimate).",
+      "html": "<a class=\"ds-btn ds-btn-fill\" href=\"#\">Get a free estimate</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid #f2c230;font:800 17px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:3px solid #f2c230;outline-offset:3px} .ds-btn-fill{background:#f2c230;color:#1d2830;text-decoration:none} .ds-btn-fill:hover{background:#d9a812;border-color:#d9a812}"
+    },
+    {
+      "name": "Secondary Button (on slate)",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Yellow-outlined pill beside the primary on dark ground; same height and border.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-line\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 7h3l2-3h6l2 3h3v12H4z\"/><circle cx=\"12\" cy=\"13\" r=\"3.5\"/></svg> Text us a photo</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid #f2c230;font:800 17px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:3px solid #f2c230;outline-offset:3px} .ds-dark{background:#23313a;padding:20px} .ds-btn-line{background:transparent;color:#f1efe9;text-decoration:none} .ds-btn-line:hover{background:rgba(242,194,48,.14)}"
+    },
+    {
+      "name": "Send Button",
+      "kind": "button",
+      "refersTo": "button-send",
+      "description": "Slate pill that submits the estimate form; chalk-blue outline on hover and focus.",
+      "html": "<button class=\"ds-btn ds-send\">Text this to us</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid #f2c230;font:800 17px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:3px solid #f2c230;outline-offset:3px} .ds-send{background:#23313a;border-color:#23313a;color:#f1efe9;width:100%;max-width:420px} .ds-send:hover{background:#2c3d47;border-color:#2a78c2} .ds-send:focus-visible{outline:3px solid #2a78c2}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Whole-row sms: link; only the arrow fills yellow on hover/focus.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><span>Patios</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Retaining walls</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li></ul>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;border-top:1px solid #c6cbc4;background:#e4e7e2;color:#1d2830} .ds-rows li{border-bottom:1px solid #c6cbc4} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 0;text-decoration:none;color:inherit;font:800 20px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif} .ds-row:hover,.ds-row:focus-visible{outline:none;background:none;box-shadow:none} .ds-arrow{width:42px;height:42px;border-radius:50%;border:2px solid #c6cbc4;display:grid;place-items:center;transition:background-color .2s,border-color .2s} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#f2c230;border-color:#f2c230} .ds-row:focus-visible .ds-arrow{outline:3px solid #f2c230;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Recessed field; chalk-blue border on hover, chalk ring on focus, brick on error.",
+      "html": "<label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\">",
+      "css": ".ds-label{display:block;font:800 17px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;margin-bottom:8px;color:#1d2830} .ds-input{width:100%;font:400 17px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1d2830;background:#f3f5f1;border:2px solid #c6cbc4;border-radius:10px;padding:14px;min-height:54px;caret-color:#2a78c2;transition:border-color .15s,box-shadow .15s} .ds-input:hover{border-color:#2a78c2} .ds-input:focus{outline:none;border-color:#2a78c2;box-shadow:0 0 0 3px rgba(42,120,194,.25)}"
+    },
+    {
+      "name": "Choice Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox pills; chalk-blue outline on hover/focus, slate fill when selected.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Patios</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Walkways</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Something else</span></label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px} .ds-chip{position:relative} .ds-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0} .ds-chip span{display:flex;align-items:center;min-height:46px;padding:0 16px;border-radius:999px;border:2px solid #c6cbc4;background:#f3f5f1;color:#1d2830;font:700 17px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s,box-shadow .15s} .ds-chip span:hover{border-color:#2a78c2} .ds-chip input:focus-visible+span{border-color:#2a78c2;box-shadow:0 0 0 3px rgba(42,120,194,.25)} .ds-chip input:checked+span{background:#23313a;border-color:#23313a;color:#f1efe9} .ds-chip input:checked+span:hover{border-color:#2a78c2}"
+    },
+    {
+      "name": "Facebook Card",
+      "kind": "card",
+      "refersTo": "facebook-card",
+      "description": "Slate link card under the work photo; only the go-circle fills yellow on hover.",
+      "html": "<a class=\"ds-fb\" href=\"#\"><span class=\"ds-fbi\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"#fff\"><path d=\"M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.9v3h2.6V21z\"/></svg></span>Click to see more of our work.<span class=\"ds-go\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-fb{display:flex;align-items:center;gap:14px;padding:14px 18px;min-height:64px;border-radius:10px;background:#23313a;color:#f1efe9;text-decoration:none;font:800 20px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif} .ds-fbi{flex:none;width:36px;height:36px;border-radius:50%;background:#1877f2;display:grid;place-items:center} .ds-go{margin-left:auto;flex:none;width:36px;height:36px;border-radius:50%;border:2px solid rgba(241,239,233,.35);display:grid;place-items:center;transition:background-color .2s,border-color .2s} .ds-fb:hover .ds-go,.ds-fb:focus-visible .ds-go{background:#f2c230;border-color:#f2c230;color:#1d2830} .ds-fb:focus-visible{outline:none} .ds-fb:focus-visible .ds-go{outline:3px solid #f2c230;outline-offset:3px}"
+    },
+    {
+      "name": "Step Tiles",
+      "kind": "custom",
+      "refersTo": "step-tile",
+      "description": "Rose-granite numbered tiles beside uppercase step headings.",
+      "html": "<ol class=\"ds-steps\"><li><h3>Show us the spot</h3><p>Text a photo or call.</p></li><li><h3>Free estimate</h3><p>A straight price, no charge.</p></li></ol>",
+      "css": ".ds-steps{list-style:none;margin:0;padding:20px;display:grid;gap:22px;counter-reset:s;background:#d9ddd7;font:400 17px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1d2830} .ds-steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:4px 16px;align-items:start} .ds-steps li::before{content:counter(s);grid-row:span 2;width:48px;height:48px;border-radius:8px;background:#8a6b6a;color:#fff;display:grid;place-items:center;font-weight:900;font-size:22px} .ds-steps h3{margin:0;font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:1;padding-top:4px} .ds-steps p{margin:0;color:#46555c}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Brand lockup left, tap-to-call number top-right; not sticky.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 64 64\" width=\"38\" height=\"38\"><rect x=\"2\" y=\"6\" width=\"28\" height=\"15\" rx=\"3\" fill=\"#a5807c\"/><rect x=\"33\" y=\"6\" width=\"29\" height=\"15\" rx=\"3\" fill=\"#8a6b6a\"/><rect x=\"2\" y=\"24\" width=\"13\" height=\"15\" rx=\"3\" fill=\"#8a6b6a\"/><rect x=\"18\" y=\"24\" width=\"28\" height=\"15\" rx=\"3\" fill=\"#b39089\"/><rect x=\"49\" y=\"24\" width=\"13\" height=\"15\" rx=\"3\" fill=\"#a5807c\"/><rect x=\"2\" y=\"42\" width=\"60\" height=\"14\" rx=\"3\" fill=\"#f2c230\"/></svg><b>Stone, Concrete,<br>&amp; Brick Masons</b></a><a class=\"ds-tel\" href=\"#\">347-684-4863</a></div>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:#23313a;color:#f1efe9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif} .ds-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;min-height:44px} .ds-brand b{font-weight:900;text-transform:uppercase;font-size:12.5px;line-height:1.1} .ds-tel{font-weight:900;font-size:17px;text-decoration:none;color:#f1efe9;min-height:44px;display:flex;align-items:center;font-variant-numeric:tabular-nums} .ds-tel:hover{color:#f2c230} .ds-tel:focus-visible{outline:3px solid #f2c230;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Job Site You Finish Yourself",
+    "overview": "The whole system is lifted from one photo the client posted: a fresh broom-finished concrete walk beside a rose-granite block retaining wall, wooden form boards, safety-yellow curb stops and a blue chalk line. Every surface maps to one of those materials. The dark slate ground is the night side of the site, the pale grey-green paper is the mortar, rose granite trims and numbers things, safety yellow marks the things you can act on, and chalk blue outlines only the form you fill in. Nothing is decorative that isn't one of those materials.\n\nIt is a phone-first, single-column page that reads top to bottom like a job: promise, what we build, who we are, how it goes, the estimate form, the close. Density is low and blunt; headings are heavy uppercase system type, body is plain sentence case. Two living elements carry the craft: a wet-concrete slab under the hero that a steel trowel finishes (on its own, or under your finger in any direction), and courses of granite coping between sections and on top of the work photo that nudge under the pointer and settle back. The page is otherwise still.\n\nThe owner's house style (Ellie's pitch-site rules) shapes the frame: system font stack, no sticky bars, the phone number in the top-right corner and only there on the first screen, at most two buttons under the headline, accents on hover rather than at rest, and the Facebook link sitting directly under the work photo where a visitor wants to see more.",
+    "keyCharacteristics": [
+      "Materials, not decoration: slate, mortar, rose granite, safety yellow, chalk blue, concrete, wood.",
+      "Heavy uppercase system-font headings over plain sentence-case body.",
+      "Two living canvases (wet slab + trowel, granite coping); everything else static.",
+      "Safety yellow means \"act here\"; chalk blue means \"you are filling in the form\".",
+      "Phone-first: one column, 56px pill buttons, 44px minimum touch targets, tel: and sms: links as the primary actions."
+    ],
+    "rules": [
+      {
+        "name": "The Curb-Stop Rule",
+        "body": "Safety yellow is a fill for primary actions and a response to hover or focus. Cues such as arrows sit neutral at rest and turn yellow only when the pointer or focus reaches them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Chalk-Line Rule",
+        "body": "Chalk blue belongs to the form. Every control inside the form (fields, chips, the send button) shows a chalk-blue outline on hover and focus; nothing outside the form uses it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Signage Rule",
+        "body": "Headings are 900-weight uppercase with tight leading; body never goes uppercase and never goes above 21px.",
+        "section": "typography"
+      },
+      {
+        "name": "The Thumb Rule",
+        "body": "Every interactive target is at least 44px tall; buttons are 56px, rows 64px, chips 46px, fields 54px.",
+        "section": "layout"
+      },
+      {
+        "name": "The Material Shadow Rule",
+        "body": "Shadows belong to things with weight (a photo, a trowel, a stone block) and are tinted with slate, never black. Cards, buttons, and rows stay flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Living Material Rule",
+        "body": "Motion only ever lives inside the materials (concrete, stone). Text, buttons and cards never animate beyond color transitions (0.15 to 0.2s) and the 1px press.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** take every new color from the job-site materials: slate, mortar, rose granite, safety yellow, chalk blue, concrete grey, form-board wood.",
+      "**Do** keep safety yellow for primary fills and hover/focus responses; cues sit neutral at rest (The Curb-Stop Rule).",
+      "**Do** outline every form control in chalk blue on hover and focus, and keep chalk blue inside the form (The Chalk-Line Rule).",
+      "**Do** make service lists whole-row sms: links with one arrow cue each; only the arrow fills on hover.",
+      "**Do** frame client photos in the world's own material, as the granite cap does on the work photo, and put the Facebook link directly under the work.",
+      "**Do** keep every target at least 44px tall and match paired buttons in height and border.",
+      "**Do** honor prefers-reduced-motion by freezing the living elements to a finished still."
+    ],
+    "donts": [
+      "**Don't** add a sticky bottom bar, or a Call button under the hero headline; the phone number lives top-right in the header on the first screen.",
+      "**Don't** put more than two buttons under the hero headline.",
+      "**Don't** tint, outline or shadow a service row on hover.",
+      "**Don't** use chalk blue outside the form, or yellow as the form's focus color.",
+      "**Don't** add thin decorative highlight lines or hairline glints; depth comes from shading and slate-tinted soft shadows.",
+      "**Don't** let either canvas run behind text; the slab sits below the hero copy and the coping sits between sections.",
+      "**Don't** give UI cards or buttons drop shadows; only the photo, the trowel and the stone blocks cast them."
+    ]
+  }
+}
