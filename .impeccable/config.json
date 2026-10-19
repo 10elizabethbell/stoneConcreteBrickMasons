@@ -26,6 +26,60 @@
         ],
         "createdAt": "2026-10-19T13:57:15.931Z",
         "reason": "Detector only counts 15/17/20px text sizes; hierarchy is carried by 900-weight uppercase headings at 32-96px. Small text stays >=15px for phone readability (ellie-taste section 0)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(108, 116, 114)",
+        "createdAt": "2026-10-19T14:09:47.598Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: slab fallback fill before canvas paints"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#1877f2",
+        "createdAt": "2026-10-19T14:09:47.685Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: Facebook brand blue on the FB icon"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#fff",
+        "createdAt": "2026-10-19T14:09:47.767Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: step numerals and FB glyph on dark/blue"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "12.5px",
+        "createdAt": "2026-10-19T14:09:47.850Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: wordmark/phone/story/step sizes"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "16px",
+        "createdAt": "2026-10-19T14:09:47.940Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: wordmark/phone/story/step sizes"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "18px",
+        "createdAt": "2026-10-19T14:09:48.044Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: wordmark/phone/story/step sizes"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "21px",
+        "createdAt": "2026-10-19T14:09:48.152Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: wordmark/phone/story/step sizes"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-19T14:09:48.261Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: wordmark/phone/story/step sizes"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "14px",
+        "createdAt": "2026-10-19T14:09:48.366Z",
+        "reason": "Shipped one-off values DESIGN.md deliberately left uncanonized (documenter: asset/brand/one-off); verified in the built page: wordmark/phone/story/step sizes"
       }
     ]
   }
