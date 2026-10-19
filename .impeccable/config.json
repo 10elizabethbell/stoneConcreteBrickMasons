@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-19T13:56:06.746Z",
+        "reason": "Ellie's pitch-site house style mandates the system font stack (ellie-taste.md section 2); Roboto is only the Android fallback"
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T13:56:06.829Z",
+        "reason": "Only the 41-char motto line is uppercase display text, per Ellie's heavy-uppercase heading style"
+      }
+    ]
+  }
+}

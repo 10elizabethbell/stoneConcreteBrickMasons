@@ -20,15 +20,15 @@
 :root{
   --ground:#23313a;      /* charcoal-blue slate: the page's dark ground */
   --ground-2:#2c3d47;
-  --paper:#ebe8e1;       /* mortar / limestone */
-  --paper-2:#e2ded5;
+  --paper:#e4e7e2;       /* their grey-green mortar */
+  --paper-2:#d9ddd7;
   --ink:#1d2830;
   --ink-soft:#46555c;
   --on-dark:#f1efe9;
   --on-dark-soft:#c4ccce;
   --granite:#8a6b6a;     /* rose granite from their retaining wall */
   --granite-lt:#b39089;
-  --rule:#d2ccc1;
+  --rule:#c6cbc4;
   --accent:#f2c230;      /* safety yellow from their job site */
   --accent-dk:#d9a812;
   --chalk:#2a78c2;       /* mason's chalk-line blue: form outlines */
@@ -59,7 +59,7 @@ h2{font-size:clamp(2rem,9vw,3.6rem)}
 /* ===== Header + hero ===== */
 .hero{position:relative;background:var(--ground);color:var(--on-dark);min-height:min(100svh,940px);display:flex;flex-direction:column}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px 0;max-width:1180px;width:100%;margin:0 auto}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;min-height:44px}
 .brand svg{width:38px;height:38px;flex:none}
 .brand b{font-weight:900;text-transform:uppercase;font-size:12.5px;line-height:1.1;letter-spacing:.01em}
 .tel{font-weight:900;font-size:17px;text-decoration:none;white-space:nowrap;min-height:44px;display:flex;align-items:center;padding:0 2px;color:var(--on-dark);font-variant-numeric:tabular-nums}
@@ -103,7 +103,7 @@ h2{font-size:clamp(2rem,9vw,3.6rem)}
 .work{padding:56px 0 64px}
 .work h2{margin-bottom:22px}
 .shot-walk{aspect-ratio:1270/1000}
-.fb{display:flex;align-items:center;gap:14px;margin-top:20px;padding:14px 18px;min-height:64px;border-radius:var(--radius);background:var(--ground);color:var(--on-dark);text-decoration:none;font-weight:800;font-size:18px;transition:background-color .2s}
+.fb{display:flex;align-items:center;gap:14px;margin-top:20px;padding:14px 18px;min-height:64px;border-radius:var(--radius);background:var(--ground);color:var(--on-dark);text-decoration:none;font-weight:800;font-size:20px;transition:background-color .2s}
 .fb:hover{background:var(--ground-2)}
 .fb .fbi{flex:none;width:36px;height:36px;border-radius:50%;background:#1877f2;display:grid;place-items:center}
 .fb .fbi svg{width:20px;height:20px}
@@ -128,14 +128,14 @@ form{display:grid;gap:22px;max-width:620px}
 .field label,.field legend{display:block;font-weight:800;margin-bottom:8px;padding:0}
 .field small{font-weight:400;color:var(--ink-soft)}
 fieldset{border:0;margin:0;padding:0;min-width:0}
-input[type=text],textarea{width:100%;font:400 17px/1.4 var(--font);color:var(--ink);background:#f7f5f0;border:2px solid var(--rule);border-radius:var(--radius);padding:14px 14px;min-height:54px;transition:border-color .15s,box-shadow .15s;caret-color:var(--chalk)}
+input[type=text],textarea{width:100%;font:400 17px/1.4 var(--font);color:var(--ink);background:#f3f5f1;border:2px solid var(--rule);border-radius:var(--radius);padding:14px 14px;min-height:54px;transition:border-color .15s,box-shadow .15s;caret-color:var(--chalk)}
 textarea{min-height:110px;resize:vertical}
 input[type=text]:hover,textarea:hover{border-color:var(--chalk)}
 input[type=text]:focus,textarea:focus{outline:none;border-color:var(--chalk);box-shadow:0 0 0 3px rgba(42,120,194,.25)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
-.chip span{display:flex;align-items:center;min-height:46px;padding:0 16px;border-radius:999px;border:2px solid var(--rule);background:#f7f5f0;font-weight:700;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s,box-shadow .15s;-webkit-user-select:none;user-select:none}
+.chip span{display:flex;align-items:center;min-height:46px;padding:0 16px;border-radius:999px;border:2px solid var(--rule);background:#f3f5f1;font-weight:700;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s,box-shadow .15s;-webkit-user-select:none;user-select:none}
 .chip span:hover{border-color:var(--chalk)}
 .chip input:focus-visible+span{border-color:var(--chalk);box-shadow:0 0 0 3px rgba(42,120,194,.25)}
 .chip input:checked+span{background:var(--ground);border-color:var(--ground);color:var(--on-dark)}
@@ -166,7 +166,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:4px 24px}
 @media (min-width:640px){
   .cta{grid-template-columns:1fr 1fr;max-width:560px}
   .brand b{font-size:14px}
-  .tel{font-size:19px}
+  .tel{font-size:20px}
 }
 @media (min-width:1024px){
   .wrap,.top,.hero-copy{padding-left:40px;padding-right:40px}
@@ -735,14 +735,14 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   }
 
   function step(dt){
-    var moving = false;
+    var moving = false, fresh = Math.max(0, 1 - (performance.now() - lastP) / 250);
     walls.forEach(function(cv){
       if (!cv._blocks || !cv._vis) return;
       var r = cv.getBoundingClientRect(), lx = px - r.left, ly = py - r.top, changed = false;
       cv._blocks.forEach(function(b){
         var cx = b.x + b.w / 2 + b.ox, cy = b.y + b.h / 2 + b.oy, dx = cx - lx, dy = cy - ly, d = Math.hypot(dx, dy);
-        if (d < PUSH_R && !reduce){
-          var f = (1 - d / PUSH_R) * PUSH * 60 * dt;
+        if (d < PUSH_R && fresh > 0 && !reduce){
+          var f = (1 - d / PUSH_R) * PUSH * 60 * dt * fresh;
           b.vx += (dx / (d || 1)) * f * 12 + pvx * f * 0.08; b.vy += (dy / (d || 1)) * f * 4 + pvy * f * 0.04;
           b.va += (dx > 0 ? 1 : -1) * f * 0.02;
         }
@@ -771,6 +771,7 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   addEventListener('pointermove', function(e){ poke(e.clientX, e.clientY); }, { passive: true });
   addEventListener('touchmove', function(e){ var t = e.touches[0]; if (t) poke(t.clientX, t.clientY); }, { passive: true });
   addEventListener('touchstart', function(e){ var t = e.touches[0]; if (t) poke(t.clientX, t.clientY); }, { passive: true });
+  addEventListener('touchend', function(){ px = py = -1e4; }, { passive: true });
 
   walls.forEach(function(cv){ cv._vis = true; setup(cv); });
   if ('IntersectionObserver' in window){
