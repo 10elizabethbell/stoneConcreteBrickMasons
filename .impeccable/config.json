@@ -17,6 +17,15 @@
         ],
         "createdAt": "2026-10-19T13:56:06.829Z",
         "reason": "Only the 41-char motto line is uppercase display text, per Ellie's heavy-uppercase heading style"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T13:57:15.931Z",
+        "reason": "Detector only counts 15/17/20px text sizes; hierarchy is carried by 900-weight uppercase headings at 32-96px. Small text stays >=15px for phone readability (ellie-taste section 0)"
       }
     ]
   }

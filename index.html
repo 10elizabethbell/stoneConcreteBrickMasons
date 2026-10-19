@@ -88,28 +88,26 @@ h2{font-size:clamp(2rem,9vw,3.6rem)}
 .row:hover .arrow,.row:focus-visible .arrow{background:var(--accent);border-color:var(--accent)}
 .row:focus-visible .arrow{outline:3px solid var(--accent);outline-offset:3px}
 .rows-note{color:var(--ink-soft);font-size:15px;margin:14px 0 0}
-.shot{border-radius:var(--radius);overflow:hidden;background:var(--paper-2);box-shadow:0 14px 30px -12px rgba(35,49,58,.45)}
-.shot img{width:100%;height:100%;object-fit:cover}
-.shot-wall{aspect-ratio:760/560}
+.shot{position:relative;border-radius:0 0 var(--radius) var(--radius);background:var(--paper-2);box-shadow:0 12px 26px -14px rgba(35,49,58,.55);margin-top:18px}
+.shot img{width:100%;height:100%;object-fit:cover;border-radius:inherit;-webkit-user-drag:none;user-select:none}
+.coping.cap{position:absolute;left:-8px;top:-18px;width:calc(100% + 16px);height:30px;background:transparent;z-index:1}
 
 /* ===== Story ===== */
 .story{background:var(--ground);color:var(--on-dark);padding:64px 0 72px}
 .story h2{max-width:13ch;margin-bottom:22px}
 .story p{max-width:36ch;font-size:clamp(18px,4.8vw,21px);line-height:1.55;margin:0 0 16px;color:var(--on-dark-soft)}
 .story p strong{color:var(--on-dark);font-weight:800}
-.motto{margin-top:28px !important;font-weight:900;text-transform:uppercase;font-size:clamp(20px,5.6vw,26px) !important;line-height:1.2 !important;color:var(--accent) !important;letter-spacing:-.01em}
 
-/* ===== Work ===== */
-.work{padding:56px 0 64px}
-.work h2{margin-bottom:22px}
-.shot-walk{aspect-ratio:1270/1000}
+/* ===== Work (photo + Facebook, beside the services) ===== */
+.shot-walk{aspect-ratio:1100/866}
 .fb{display:flex;align-items:center;gap:14px;margin-top:20px;padding:14px 18px;min-height:64px;border-radius:var(--radius);background:var(--ground);color:var(--on-dark);text-decoration:none;font-weight:800;font-size:20px;transition:background-color .2s}
-.fb:hover{background:var(--ground-2)}
 .fb .fbi{flex:none;width:36px;height:36px;border-radius:50%;background:#1877f2;display:grid;place-items:center}
 .fb .fbi svg{width:20px;height:20px}
 .fb .go{margin-left:auto;flex:none;width:36px;height:36px;border-radius:50%;border:2px solid rgba(241,239,233,.35);display:grid;place-items:center;transition:background-color .2s,border-color .2s}
 .fb .go svg{width:16px;height:16px}
-.fb:hover .go{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.fb:hover .go,.fb:focus-visible .go{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.fb:focus-visible{outline:none}
+.fb:focus-visible .go{outline:3px solid var(--accent);outline-offset:3px}
 
 /* ===== Steps ===== */
 .steps{background:var(--paper-2);padding:56px 0 64px}
@@ -172,12 +170,12 @@ footer .links{display:flex;flex-wrap:wrap;gap:4px 24px}
   .wrap,.top,.hero-copy{padding-left:40px;padding-right:40px}
   .hero-copy{padding-top:9svh;padding-bottom:36px}
   .slab{min-height:clamp(300px,36svh,420px)}
-  .svc-grid{grid-template-columns:1fr 1.05fr;align-items:center;gap:64px}
-  .services,.work,.steps,.quote{padding:96px 0}
+  .svc-grid{grid-template-columns:1fr 1.15fr;align-items:start;gap:64px}
+  .work{padding-top:58px}
+  .close .cta{grid-template-columns:1fr;max-width:340px}
+  .services,.steps,.quote{padding:96px 0}
   .story{padding:100px 0}
   .story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-  .work-grid{max-width:900px}
-  .work .fb{max-width:520px}
   .steps ol{grid-template-columns:repeat(3,1fr);gap:40px}
   .quote .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
   .close{padding:96px 0 88px}
@@ -191,9 +189,9 @@ footer .links{display:flex;flex-wrap:wrap;gap:4px 24px}
 DIRECTION CONTRACT
 THESIS: A mason's site you can put your hands in. The first screen is fresh concrete waiting to be finished, and the visitor finishes it with a steel trowel; everything else is laid like their granite wall.
 OWN-WORLD: Their own job site (the one photo they posted): a new broom-finished concrete walk, a rose-granite block retaining wall, wooden form boards, safety-yellow curb stops, and a blue chalk line. Slate-blue ground, limestone-mortar paper, rose granite trim, safety yellow for action, chalk blue for form outlines.
-STORY: Hero promise (one standard, done right) -> what we build (rows that text them) -> who we are (trained in law, raised in masonry) -> our work + Facebook -> how it goes -> free estimate form (sent by text) -> close with their own line -> footer.
+STORY: Hero promise (one standard, done right) -> what we build (rows that text them) beside their one real job photo, capped with granite, Facebook right under it -> who we are (trained in law, raised in masonry) -> how it goes -> free estimate form (sent by text) -> close with their own ad line -> footer.
 FIRST VIEWPORT (phone): name + tap-to-call number in the header, "One standard. Done right." headline, promise line, two buttons (free estimate, text us a photo), then the wet slab with a trowel already working it.
-FORM: Single file, system type, heavy uppercase headings; the living element is a height-field of wet concrete that slumps, plows and smooths under the trowel (mouse and finger, every direction), with granite coping courses between sections that shift under the pointer and settle back.
+FORM: Single file, system type, heavy uppercase headings; the living element is a height-field of wet concrete that slumps, plows and smooths under the trowel (mouse and finger, every direction), with granite coping courses between sections (and capping the work photo) that shift under the pointer and settle back. Concept roll skipped: unattended pitch-site build, world chosen from 6 trade worlds (runner-up in HANDOFF.md).
 -->
 <header class="hero">
   <div class="top">
@@ -205,7 +203,7 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   </div>
   <div class="hero-copy">
     <h1>One standard. Done right.</h1>
-    <p class="promise">Three JDs from a multi-generational masonry family, building your property like it's our own.</p>
+    <p class="promise">Three law-school grads from a family of masons, building your property like it's our own.</p>
     <div class="cta">
       <a class="btn btn-fill" href="#estimate">Get a free estimate</a>
       <a class="btn btn-line" id="text-photo" href="sms:+13476844863?&amp;body=Hi!%20I'd%20like%20a%20free%20estimate.%20Here's%20a%20photo%20of%20the%20spot%3A">
@@ -229,28 +227,8 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
       <ul class="rows" id="rows"></ul>
       <p class="rows-note">Tap one to text us about it.</p>
     </div>
-    <div class="shot shot-wall"><img src="img/work-01-wall.webp" loading="lazy" decoding="async" alt="A rose-granite block retaining wall with even mortar joints beside a new concrete walk" width="760" height="560" draggable="false"></div>
-  </div>
-</section>
-
-<section class="story" aria-labelledby="h-story">
-  <div class="wrap">
-    <h2 id="h-story">Trained in law. Raised in masonry.</h2>
-    <div>
-      <p><strong>We're Juris Doctors with a multi-generational masonry background.</strong> We bring precision, accountability and craftsmanship to every project.</p>
-      <p>We're a locally owned masonry and home renovation company, and you deal with us from the first look at your yard to the last joint we point. Whatever we build in front of your house gets the care we'd want in front of our own.</p>
-      <p class="motto">One contractor. One standard. Done&nbsp;right.</p>
-    </div>
-  </div>
-</section>
-
-<canvas class="coping" aria-hidden="true"></canvas>
-
-<section class="work" aria-labelledby="h-work">
-  <div class="wrap">
-    <h2 id="h-work">Our work</h2>
-    <div class="work-grid">
-      <div class="shot shot-walk"><img src="img/work-01.webp" loading="lazy" decoding="async" alt="A finished concrete walkway running along a granite block retaining wall" width="1270" height="1000" draggable="false"></div>
+    <div class="work">
+      <div class="shot shot-walk"><canvas class="coping cap" aria-hidden="true"></canvas><img src="img/work-01.webp" loading="lazy" decoding="async" alt="A finished concrete walkway we poured along a granite block retaining wall" width="1100" height="866" draggable="false"></div>
       <a class="fb" href="https://facebook.com/profile.php?id=100048466583023" rel="noopener">
         <span class="fbi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#fff"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.9v3h2.6V21z"/></svg></span>
         Click to see more of our work.
@@ -260,13 +238,25 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   </div>
 </section>
 
+<section class="story" aria-labelledby="h-story">
+  <div class="wrap">
+    <h2 id="h-story">Trained in law. Raised in masonry.</h2>
+    <div>
+      <p><strong>We're Juris Doctors with a multi-generational masonry background.</strong> We bring precision, accountability and craftsmanship to every project.</p>
+      <p>We're a locally owned masonry and home renovation company, and you deal with us from the first look at your yard to the last joint we point. Whatever we build in front of your house gets the care we'd want in front of our own.</p>
+    </div>
+  </div>
+</section>
+
+<canvas class="coping" aria-hidden="true"></canvas>
+
 <section class="steps" aria-labelledby="h-steps">
   <div class="wrap">
     <h2 id="h-steps">How it goes</h2>
     <ol>
       <li><h3>Show us the spot</h3><p>Text a photo or call. Tell us what you're picturing.</p></li>
       <li><h3>Free estimate</h3><p>We look it over and give you a straight price, no charge.</p></li>
-      <li><h3>We build it</h3><p>Built to one standard, start to finish, by us.</p></li>
+      <li><h3>We build it</h3><p>The same people you talked to build it, start to finish.</p></li>
     </ol>
   </div>
 </section>
@@ -280,13 +270,13 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
     <form id="qf" novalidate>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
-        <input type="text" id="name" name="name" autocomplete="name" enterkeyhint="next">
-        <p class="err" id="e-name">Add your name so we know who's texting.</p>
+        <input type="text" id="name" name="name" autocomplete="name" enterkeyhint="next" aria-describedby="e-name">
+        <p class="err" id="e-name" role="alert">Add your name so we know who's texting.</p>
       </div>
-      <fieldset class="field" id="f-what">
+      <fieldset class="field" id="f-what" aria-describedby="e-what">
         <legend>What do you want built?</legend>
         <div class="chips" id="chips"></div>
-        <p class="err" id="e-what">Pick at least one, or "Something else".</p>
+        <p class="err" id="e-what" role="alert">Pick at least one, or "Something else".</p>
       </fieldset>
       <div class="field">
         <label for="town">Town <small>(optional)</small></label>
@@ -357,7 +347,7 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
 (function quote(){
   var PHONE = '+13476844863';
   var f = document.getElementById('qf'); if (!f) return;
-  function bad(id, on){ document.getElementById(id).classList.toggle('bad', on); }
+  function bad(id, on){ var el = document.getElementById(id); el.classList.toggle('bad', on); var inp = el.querySelector('input[type=text]') || el; inp.setAttribute('aria-invalid', on ? 'true' : 'false'); }
   f.addEventListener('submit', function(e){
     e.preventDefault();
     var name = f.name.value.trim();
@@ -389,7 +379,7 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   var REGROW = 0.0028;                  // fresh concrete creeping back (per frame)
   var AUTO_IDLE = 3500, AUTO_SPEED = 0.55;
   var LIGHT = [-0.45, -0.65, 0.62];
-  var ROUGH = [132, 137, 132], SMOOTHC = [84, 95, 97];
+  var ROUGH = [132, 137, 132], SMOOTHC = [104, 112, 112];
 
   var wrap = document.querySelector('.slab'), cv = document.getElementById('slab');
   if (!wrap || !cv || !cv.getContext) return;
@@ -528,13 +518,13 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
       var wet = 0.9 + (H0[i] - 0.5) * 0.25;
       var lit = 0.62 + 0.5 * (dif < 0 ? 0 : dif);
       // a soft, low shine where it has been troweled
-      var hz = (nx * 0.3 + ny * 0.5 + 1) / nl, spec = Math.pow(hz > 0 ? hz : 0, 6) * 7 * s;
+      var hz = (nx * 0.3 + ny * 0.5 + 1) / nl, spec = Math.pow(hz > 0 ? hz : 0, 6) * s * (12 + 20 * (1 - (x / gw * 0.6 + y / gh * 0.4)));
       var o = i * 4;
       d[o]     = (ROUGH[0] * (1 - s) * wet + SMOOTHC[0] * s) * lit + spec;
       d[o + 1] = (ROUGH[1] * (1 - s) * wet + SMOOTHC[1] * s) * lit + spec;
       d[o + 2] = (ROUGH[2] * (1 - s) * wet + SMOOTHC[2] * s) * lit + spec;
       d[o + 3] = 255;
-      m[o + 3] = (1 - s * 0.95) * 255;
+      m[o + 3] = (1 - s * 0.78) * 255;
     }
     sctx.putImageData(img, 0, 0); mctx.putImageData(mimg, 0, 0);
   }
@@ -542,13 +532,12 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   function drawTrowel(){
     var s = DPR, x = tro.x * s, y = tro.y * s, L = tl * s, Wd = tw * s;
     ctx.save(); ctx.translate(x, y); ctx.rotate(tro.a);
-    // shadow on the concrete
-    ctx.fillStyle = 'rgba(25,30,30,.32)';
-    rr(ctx, -L / 2 + 6 * s, -Wd / 2 + 8 * s, L, Wd, 6 * s); ctx.fill();
-    // steel blade
+    // steel blade, with a soft shadow on the concrete
+    ctx.shadowColor = 'rgba(20,26,26,.32)'; ctx.shadowBlur = 8 * s; ctx.shadowOffsetX = 3 * s; ctx.shadowOffsetY = 5 * s;
     var g = ctx.createLinearGradient(0, -Wd / 2, 0, Wd / 2);
     g.addColorStop(0, '#d9dee0'); g.addColorStop(0.5, '#b7bec1'); g.addColorStop(1, '#8e979b');
     ctx.fillStyle = g; rr(ctx, -L / 2, -Wd / 2, L, Wd, 6 * s); ctx.fill();
+    ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetX = ctx.shadowOffsetY = 0;
     ctx.fillStyle = 'rgba(70,78,82,.5)'; rr(ctx, -L * 0.28, -2 * s, L * 0.56, 4 * s, 2 * s); ctx.fill();
     // wooden handle, raised on two posts
     ctx.fillStyle = 'rgba(25,30,30,.35)'; rr(ctx, -L * 0.3 + 5 * s, -Wd * 0.2 + 7 * s, L * 0.6, Wd * 0.4, Wd * 0.2); ctx.fill();
@@ -591,8 +580,8 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   function mark(px, py, a, mx, my, k){
     var s = DPR, side = (-Math.sin(a) * mx + Math.cos(a) * my) > 0 ? -1 : 1;
     kctx.save(); kctx.translate(px * s, py * s); kctx.rotate(a);
-    kctx.strokeStyle = k % 2 ? 'rgba(196,204,202,.10)' : 'rgba(40,48,48,.10)';
-    kctx.lineWidth = s; kctx.beginPath();
+    kctx.strokeStyle = 'rgba(40,48,48,.06)';
+    kctx.lineWidth = 2 * s; kctx.beginPath();
     kctx.moveTo(-tl * 0.48 * s, side * tw * 0.5 * s);
     kctx.quadraticCurveTo(0, side * tw * 0.62 * s, tl * 0.48 * s, side * tw * 0.5 * s);
     kctx.stroke(); kctx.restore();
@@ -680,7 +669,7 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   function sprite(w, h, R, dpr){
     var c = document.createElement('canvas'); c.width = Math.ceil(w * dpr); c.height = Math.ceil(h * dpr);
     var g = c.getContext('2d'); g.scale(dpr, dpr);
-    var hue = R(), base = [128 + hue * 34, 100 + hue * 20, 98 + hue * 16].map(Math.round);
+    var hue = R(), base = [112 + hue * 30, 97 + hue * 18, 97 + hue * 16].map(Math.round);
     // split-face outline: slightly irregular corners
     var j = function(){ return (R() - 0.5) * 2.4; };
     g.beginPath();
@@ -692,11 +681,19 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
     lg.addColorStop(0, 'rgb(' + base.map(function(v){ return v + 22; }) + ')');
     lg.addColorStop(1, 'rgb(' + base.map(function(v){ return v - 26; }) + ')');
     g.fillStyle = lg; g.fillRect(0, 0, w, h);
-    for (var n = 0; n < w * h / 3; n++){
-      var r = R();
-      g.fillStyle = r < 0.45 ? 'rgba(60,44,46,.5)' : r < 0.8 ? 'rgba(214,196,190,.45)' : 'rgba(30,26,28,.55)';
-      var s = 0.6 + R() * 1.2; g.fillRect(R() * w, R() * h, s, s);
+    // split face: soft light and dark patches
+    for (var q = 0; q < 3; q++){
+      var cx = R() * w, cy = R() * h, rad = (0.3 + R() * 0.2) * w, pg = g.createRadialGradient(cx, cy, 0, cx, cy, rad);
+      pg.addColorStop(0, R() < 0.5 ? 'rgba(235,220,215,.18)' : 'rgba(40,30,32,.16)'); pg.addColorStop(1, 'rgba(0,0,0,0)');
+      g.fillStyle = pg; g.fillRect(0, 0, w, h);
     }
+    // grain: fine dust, dark biotite, pale feldspar
+    for (var n = 0; n < w * h / 4; n++){ g.fillStyle = R() < 0.5 ? 'rgba(70,58,60,.35)' : 'rgba(205,195,192,.3)'; g.fillRect(R() * w, R() * h, 0.8, 0.8); }
+    for (n = 0; n < w * h / 40; n++){ var d1 = 1 + R(); g.fillStyle = 'rgba(28,24,26,.55)'; g.fillRect(R() * w, R() * h, d1, d1 * (0.6 + R() * 0.6)); }
+    for (n = 0; n < w * h / 70; n++){ var d2 = 1.5 + R() * 1.5; g.fillStyle = 'rgba(228,214,208,.5)'; g.fillRect(R() * w, R() * h, d2, d2 * (0.5 + R() * 0.5)); }
+    var lip = g.createLinearGradient(0, 0, 0, h);
+    lip.addColorStop(0, 'rgba(240,230,226,.16)'); lip.addColorStop(0.18, 'rgba(240,230,226,0)'); lip.addColorStop(0.8, 'rgba(20,16,18,0)'); lip.addColorStop(1, 'rgba(20,16,18,.22)');
+    g.fillStyle = lip; g.fillRect(0, 0, w, h);
     var side = g.createLinearGradient(0, 0, w, 0);
     side.addColorStop(0, 'rgba(255,240,235,.10)'); side.addColorStop(1, 'rgba(20,16,18,.22)');
     g.fillStyle = side; g.fillRect(0, 0, w, h);
@@ -710,7 +707,7 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     cv._w = w; cv._h = h; cv._dpr = dpr; cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
     var R = rnd(walls.indexOf(cv) * 977 + 41), blocks = [];
-    for (var row = 0; row < 2; row++){
+    for (var row = 0; row < (cv.classList.contains('cap') ? 1 : 2); row++){
       var x = row ? -MIN_W * 0.6 : -R() * MIN_W, y = 3 + row * (ROW_H + JOINT);
       while (x < w){
         var bw = MIN_W + R() * (MAX_W - MIN_W);
@@ -724,7 +721,8 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   function draw(cv){
     var g = cv.getContext('2d'), d = cv._dpr;
     g.setTransform(d, 0, 0, d, 0, 0);
-    g.fillStyle = '#9ea49d'; g.fillRect(0, 0, cv._w, cv._h);
+    g.clearRect(0, 0, cv._w, cv._h);
+    if (!cv.classList.contains('cap')){ g.fillStyle = '#9ea49d'; g.fillRect(0, 0, cv._w, cv._h); }
     for (var n = 0; n < 2; n++) for (var i = 0; i < cv._blocks.length; i++){
       var b = cv._blocks[i];
       g.save(); g.translate(b.x + b.w / 2 + b.ox, b.y + b.h / 2 + b.oy); g.rotate(b.a);
@@ -764,7 +762,7 @@ FORM: Single file, system type, heavy uppercase headings; the living element is 
   }
   function poke(x, y){
     var now = performance.now();
-    if (lastP && now - lastP < 100){ pvx = (x - px) / ((now - lastP) / 1000) / 60; pvy = (y - py) / ((now - lastP) / 1000) / 60; }
+    if (lastP && now - lastP < 100 && px > -1e3){ var gap = Math.max(8, now - lastP) / 1000; pvx = Math.max(-40, Math.min(40, (x - px) / gap / 60)); pvy = Math.max(-40, Math.min(40, (y - py) / gap / 60)); }
     px = x; py = y; lastP = now;
     if (!running){ running = true; requestAnimationFrame(loop); }
   }
